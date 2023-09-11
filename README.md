@@ -31,7 +31,7 @@ Users should be able to:
 - [Solution URL](https://github.com/soundsmetallic/nft_preview_card)
 - [Live Site URL](https://soundsmetallic.github.io/nft_preview_card/)
 
-## My](https://soundsmetallic.github.io/nft_preview_card/) process
+## My process
 
 - Format the html file.
 - Add the fonts.
