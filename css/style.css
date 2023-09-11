@@ -1,0 +1,144 @@
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Background Styling */
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NFT Card Styling */
+svg {
+  display: none;
+}
+
+.nft-card {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* Main Image */
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-img img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.main-img:hover {
+  cursor: pointer;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 1rem;
+}
+.main-img:hover img:first-child {
+  opacity: 0.4;
+}
+.main-img:hover .eye-icon {
+  opacity: 1;
+}
+
+.eye-icon {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* Text Styling */
+h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 1.5rem;
+}
+
+.offer p {
+  display: inline-flex;
+  margin: 0;
+}
+
+.price p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.price,
+.time-remaining {
+  display: flex;
+  align-items: center;
+}
+.price img,
+.time-remaining img {
+  margin-right: 0.25rem;
+}
+
+.author {
+  display: inline-flex;
+  align-items: center;
+  height: 4rem;
+}
+.author img {
+  max-width: 2rem;
+  padding: 0.1rem;
+}
+.author .author-image {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.25rem;
+}
+.author p {
+  display: inline;
+}
+.author span {
+  color: white;
+}
+.author span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  color: hsl(215, 51%, 70%);
+}

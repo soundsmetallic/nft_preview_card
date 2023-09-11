@@ -1,0 +1,158 @@
+$primary-clr-100: hsl(215, 51%, 70%);
+$primary-clr-200: hsl(178, 100%, 50%);
+
+$neutral-clr-100: white;
+$neutral-clr-300: hsl(215, 32%, 27%);
+$neutral-clr-500: hsl(216, 50%, 16%);
+$neutral-clr-700: hsl(217, 54%, 11%);
+
+
+/* General Styling */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background Styling */
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: $neutral-clr-700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NFT Card Styling */
+
+svg {
+    display: none;
+}
+
+.nft-card {
+    width: 300px;
+    background-color: $neutral-clr-500;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+/* Main Image */
+
+.main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-clr-200;
+        border-radius: 1rem;
+        img:first-child {
+            opacity: .4;
+        }
+        .eye-icon {
+            opacity: 1;
+        }
+    }
+}
+
+.eye-icon {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+/* Text Styling */
+
+h1 {
+    color: $neutral-clr-100;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    &:hover {
+        cursor: pointer;
+        color: $primary-clr-200;
+    }
+}
+
+p {
+    color:$primary-clr-100;
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $neutral-clr-300;
+    padding-bottom: 1.5rem;
+}
+
+.offer p {
+    display: inline-flex;
+    margin: 0;
+}
+
+.price p {
+    color: $primary-clr-200;
+    font-weight: 400;
+}
+
+.price,
+.time-remaining {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: .25rem;
+    }
+}
+
+.author {
+    display: inline-flex;
+    align-items: center;
+    height: 4rem;
+    img {
+        max-width: 2rem;
+        padding: .1rem;
+    }
+    .author-image {
+        width: 2.2rem;
+        height: 2.2rem;
+        background-color: $neutral-clr-100;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.25rem;
+    }
+
+    p {
+        display: inline;
+    }
+    
+    span {
+        color: $neutral-clr-100;
+        &:hover {
+            cursor: pointer;
+            color: $primary-clr-200;
+        }
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+    color: $primary-clr-100;
+} 
