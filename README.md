@@ -28,10 +28,10 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]https://github.com/soundsmetallic/nft_preview_card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/soundsmetallic/nft_preview_card)
+- [Live Site URL](https://soundsmetallic.github.io/nft_preview_card/)
 
-## My process
+## My](https://soundsmetallic.github.io/nft_preview_card/) process
 
 - Format the html file.
 - Add the fonts.
